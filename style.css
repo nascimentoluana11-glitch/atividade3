@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    padding: 40px 20px;
+}
+
+/* Container que permite a quebra de linha para os cards de 100% */
+.feed-container {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* 1 e 2. Card horizontal ocupando 100% da largura disponível */
+article {
+    display: flex;
+    flex-direction: row;       /* Coloca imagem e conteúdo lado a lado */
+    flex: 0 0 100%;            /* Ocupa 100% da linha, formando uma lista larga */
+    align-items: center;       /* Alinhamento padrão dos itens no eixo cruzado */
+    gap: 24px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;            /* Impede que a imagem seja esmagada pelo texto */
+}
+
+.card-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+/* 3. Elemento destacado quebrando o alinhamento do pai com align-self */
+.btn-ler {
+    align-self: flex-end;      /* Empurra o botão para a direita/extremidade oposta */
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-ler:hover {
+    background-color: #1d4ed8;
+}
