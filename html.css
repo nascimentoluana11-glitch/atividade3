@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Horizontais com Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="feed-container">
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400" alt="Notebook com código na tela" class="card-img">
+            
+            <div class="card-conteudo">
+                <h2>Dominando Flexbox na Prática</h2>
+                <p>Ao alterar a direção do eixo principal para row, a imagem e o bloco de texto passam a se organizar lado a lado automaticamente.</p>
+                <button class="btn-ler">Ler artigo</button>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400" alt="Editor de código escuro" class="card-img">
+            
+            <div class="card-conteudo">
+                <h2>Alinhamento Individual com align-self</h2>
+                <p>Mesmo quando o container define um alinhamento padrão, elementos específicos podem quebrar essa regra e se posicionar no topo, centro ou base.</p>
+                <button class="btn-ler">Ler artigo</button>
+            </div>
+        </article>
+    </main>
+
+</body>
+</html>
